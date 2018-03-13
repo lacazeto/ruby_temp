@@ -18,7 +18,7 @@ address_splitted.each { |elem|
 }
 
 street_text = address_splitted - number_address #subtracting number from address
-street_text.delete_if { |elem|
+street_text.delete_if { |elem|  #expecting a char value for the block, removing everything else
     elem.length > 1
 }
 

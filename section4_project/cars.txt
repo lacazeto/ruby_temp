@@ -1,0 +1,5 @@
+2|4|prime
+2|4|prime
+4|6|yellow
+2|4|white
+4|6|white
