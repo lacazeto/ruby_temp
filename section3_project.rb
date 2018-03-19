@@ -5,7 +5,7 @@ marriage_options = {
     's' => "You are: Single."
 }
 
-while valid_option == false do
+while !valid_option do
     puts "Please enter your marriage status:"
     m_status = gets.chomp
 
@@ -15,13 +15,13 @@ while valid_option == false do
 
         until salary > 0
             puts "Please enter your salary:"
-            salary = (gets.chomp).to_f
+            salary = gets.chomp.to_f
         end
 
         case salary
-        when (0..9275)
+        when 0..9275
             puts "Your tax rate is: 10%"
-        when (9276..37650) 
+        when 9276..37650
             puts "Your tax rate is: 15%"
         else
             puts "Your tax rate is: 25%"
